@@ -29,10 +29,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; 
+import {MatSliderModule} from '@angular/material/slider';
+
 
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     HomeComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSlideToggleModule,
     FormsModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSliderModule
   ],
   providers: [DishService,
     LeaderService],
